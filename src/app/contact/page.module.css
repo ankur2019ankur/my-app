@@ -40,6 +40,42 @@
   .button:hover {
     background: #15803d;
   }
+
+  .editButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    background: #0ea5e9;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s ease;
+  }
+
+  .editButton:hover {
+    background: #0284c7;
+  }
+
+  .deleteButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    background: #dc2626;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s ease;
+  }
+
+  .deleteButton:hover {
+    background: #b91c1c;
+  }
   
   .table {
     width: 100%;

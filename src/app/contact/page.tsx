@@ -42,6 +42,7 @@ export default async function contactPage() {
             <tr>
               <th>Name</th>
               <th>Email</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -49,6 +50,14 @@ export default async function contactPage() {
               <tr key={contact.id}>
                 <td>{contact.name}</td>
                 <td>{contact.email}</td>
+                <td>
+                  <Link href={`/contact/edit/${contact.id}`} className={styles.editButton}>
+                    Edit
+                  </Link>
+                  <Link href={`/contact/delete/${contact.id}`} className={styles.deleteButton}>
+                    Delete
+                  </Link>
+                </td>
               </tr>
             ))}
           </tbody>
