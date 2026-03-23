@@ -2,9 +2,9 @@
     "users": [
         {
             "id": "1",
-            "name": "user",
-            "email": "user@example.com",
-            "password": "555555"
+            "name": "ankur",
+            "email": "ankur@gmail.com",
+            "password": "ankur"
         }
     ],
     "contacts": [

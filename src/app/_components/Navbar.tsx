@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import LogoutButton from './LogoutButton';
+import { getSessionUserEmail } from '../actions/auth';
 
-export default function Navbar() {
-    const session = false;
+export default async function Navbar() {
+  const session = await getSessionUserEmail();
+  console.log(session);
   return (
     <div className="bg-white shadow-sm">
         <div className="container mx-auto px-4 flex justify-between h-16 items-center">
