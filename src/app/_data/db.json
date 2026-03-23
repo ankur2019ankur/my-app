@@ -1,18 +1,25 @@
 {
-    "users": [
-        {
-            "id": "1",
-            "name": "ankur",
-            "email": "ankur@gmail.com",
-            "password": "ankur"
-        }
-    ],
-    "contacts": [
-        {
-            "id": "1",
-            "name": "John Doe",
-            "email": "john.doe@example.com",
-            "userId": "1"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "ankur",
+      "email": "ankur@gmail.com",
+      "password": "ankur"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Janessss Smith",
+      "email": "jane.smith@example.com",
+      "userId": "1"
+    },
+    {
+      "name": "rohit sharma",
+      "email": "rohit@gmail.com",
+      "userId": "1",
+      "id": "OefGxE5Ab6Q"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
