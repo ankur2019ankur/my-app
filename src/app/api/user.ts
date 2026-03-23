@@ -13,6 +13,7 @@ const serverUrl = 'http://localhost:3001';
  *         - id
  *         - name
  *         - email
+ *         - password
  *       properties:
  *         id:
  *           type: string
@@ -24,11 +25,15 @@ const serverUrl = 'http://localhost:3001';
  *           type: string
  *           format: email
  *           example: "john@example.com"
+ *         password:
+ *           type: string
+ *           example: "supersecret123"
  *     CreateUserInput:
  *       type: object
  *       required:
  *         - name
  *         - email
+ *         - password
  *       properties:
  *         name:
  *           type: string
@@ -37,6 +42,9 @@ const serverUrl = 'http://localhost:3001';
  *           type: string
  *           format: email
  *           example: "jane@example.com"
+ *         password:
+ *           type: string
+ *           example: "supersecret123"
  *     UpdateUserInput:
  *       type: object
  *       properties:
@@ -141,7 +149,7 @@ const serverUrl = 'http://localhost:3001';
  *       404:
  *         description: User not found.
  */
-export type CreateUserInput = Omit<User, 'id'>;
+export type CreateUserInput = Pick<User, 'name' | 'email'> & { password: string };
 export type UpdateUserInput = Partial<Omit<User, 'id'>>;
 
 export async function getUsers(): Promise<User[]> {
