@@ -19,6 +19,12 @@
       "email": "rohit@gmail.com",
       "userId": "1",
       "id": "OefGxE5Ab6Q"
+    },
+    {
+      "name": "tejal",
+      "email": "tejal@gmail.com",
+      "userId": "1",
+      "id": "SSdDd_IB96A"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

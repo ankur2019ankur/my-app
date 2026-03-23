@@ -41,7 +41,7 @@ export async function login(_prevState: LoginState, formData: FormData): Promise
     }
 
     const cookieStore = await cookies();
-    cookieStore.set(sessionCookieName, user.email, {
+    cookieStore.set(sessionCookieName, JSON.stringify(user), {
       httpOnly: true,
       sameSite: 'lax',
       secure: process.env.NODE_ENV === 'production',
