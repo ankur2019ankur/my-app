@@ -48,6 +48,12 @@
       "email": "passwan@gmail.com",
       "userId": "wbJi5jHS9l8",
       "id": "-dpMQE1D4HU"
+    },
+    {
+      "name": "diganta kumar",
+      "email": "diganta1@gmail.com",
+      "userId": "jg9qm3juVNM",
+      "id": "8PKK8U6tFOM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
