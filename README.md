@@ -34,3 +34,42 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+deployment related information
+==============================
+
+—-----------------------------
+sudo apt update
+sudo apt install -y nodejs npm
+
+Check install or not
+—----------------------
+Node -v
+Npm -v
+
+Install pm2 globally
+—-----------------------
+npm install -g pm2
+
+Pull the repo
+—--------------
+Git clone
+Git pull origin main
+
+Update package (get the node_module)
+—--------------------------------------------------
+Npm i
+
+Prepare build(make a build in .next folder)
+—----------------------------------------------------
+Npm run build
+
+Start server with pm2
+—---------------------------
+pm2 start npm --name "my-app" -- start
+
+Verify server is running
+—----------------------------
+Pm2 list
+
+
