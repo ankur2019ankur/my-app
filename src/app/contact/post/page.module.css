@@ -1,0 +1,86 @@
+.pageContainer {
+  padding: 20px;
+  position: relative;
+}
+
+.pageTitle {
+  margin: 0;
+}
+
+.statusText {
+  margin-top: 12px;
+}
+
+.errorText {
+  color: red;
+}
+
+.postsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.tableHeaderCell {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.tableCell {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.detailsButton {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modalCard {
+  background: #fff;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 100%;
+  padding: 20px;
+}
+
+.modalTitle {
+  margin-top: 0;
+}
+
+.modalDivider {
+  margin: 16px 0;
+}
+
+.modalPostTitle {
+  font-weight: 600;
+}
+
+.modalPostBody {
+  white-space: pre-wrap;
+}
+
+.closeButton {
+  margin-top: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  background-color: #dc2626;
+  color: #fff;
+  border: 1px solid #b91c1c;
+  border-radius: 4px;
+}
+
+.closeButton:hover {
+  background-color: #b91c1c;
+}
