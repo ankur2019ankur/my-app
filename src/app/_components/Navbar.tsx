@@ -22,6 +22,9 @@ export default async function Navbar() {
                         <Link href="/contact/post" className="text-blue-600 hover:text-blue-600 mr-8">
                             Posts
                         </Link>
+                        <Link href="/state" className="text-blue-600 hover:text-blue-600 mr-8">
+                            states
+                        </Link>
                         <LogoutButton />
                     </>
                 ) : (
@@ -34,6 +37,9 @@ export default async function Navbar() {
                         </Link>
                         <Link href="/contact/post" className="text-blue-600 hover:text-blue-600 mr-8">
                             Posts
+                        </Link>
+                        <Link href="/state" className="text-blue-600 hover:text-blue-600 mr-8">
+                            states
                         </Link>
                     </>
                 

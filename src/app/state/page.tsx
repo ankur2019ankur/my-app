@@ -14,6 +14,49 @@ function normalizeStates(items: StateFromApi[]): State[] {
   })) as State[];
 }
 
+function csvEscape(value: unknown): string {
+  if (value === null || value === undefined) return '';
+  const text = String(value);
+  const mustQuote = /[",\n\r]/.test(text);
+  const escaped = text.replace(/"/g, '""');
+  return mustQuote ? `"${escaped}"` : escaped;
+}
+
+function statesToCsv(items: State[]): string {
+  const headers = ['Name', 'Capital', 'Temperature', 'Season', 'GDP', 'Population', 'Area'] as const;
+  const lines = [
+    headers.join(','),
+    ...items.map((s) =>
+      [
+        csvEscape(s.name),
+        csvEscape(s.capital),
+        csvEscape(s.temperature),
+        csvEscape(s.season),
+        csvEscape(s.gdp),
+        csvEscape(s.population),
+        csvEscape(s.area),
+      ].join(',')
+    ),
+  ];
+
+  return `${lines.join('\r\n')}\r\n`;
+}
+
+function downloadTextFile(filename: string, contents: string, mimeType: string) {
+  const blob = new Blob([contents], { type: mimeType });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  window.setTimeout(() => URL.revokeObjectURL(url), 0);
+}
+
 export default function StatePage() {
   const [states, setStates] = useState<State[]>([]);
   const [rawStates, setRawStates] = useState<StateFromApi[]>([]);
@@ -52,13 +95,33 @@ export default function StatePage() {
     };
   }, []);
 
+  const canExport = !loading && !errorMessage && states.length > 0;
+
   return (
     <div className={styles.page}>
       <div className={styles.header}>
-        <h1 className={styles.title}>States</h1>
-        <p className={styles.subtitle}>
-          Fetched from http://localhost:3001/states
-        </p>
+        <div className={styles.headerTop}>
+          <div className={styles.headerCopy}>
+            <h1 className={styles.title}>States</h1>
+            <p className={styles.subtitle}>Fetched from http://localhost:3001/states</p>
+          </div>
+
+          <button
+            type="button"
+            className={styles.exportBtn}
+            disabled={!canExport}
+            onClick={() => {
+              const csv = statesToCsv(states);
+              const d = new Date();
+              const yyyy = String(d.getFullYear());
+              const mm = String(d.getMonth() + 1).padStart(2, '0');
+              const dd = String(d.getDate()).padStart(2, '0');
+              downloadTextFile(`states-${yyyy}-${mm}-${dd}.csv`, csv, 'text/csv;charset=utf-8;');
+            }}
+          >
+            Export
+          </button>
+        </div>
       </div>
 
       {errorMessage ? (

@@ -11,6 +11,45 @@
   margin-bottom: 18px;
 }
 
+.headerTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.headerCopy {
+  min-width: 240px;
+}
+
+.exportBtn {
+  appearance: none;
+  border: 1px solid #e2e8f0;
+  background: #473dd2;
+  color: #0f172a;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease, transform 60ms ease;
+}
+
+.exportBtn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.exportBtn:active {
+  transform: translateY(1px);
+}
+
+.exportBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
 .toolbar {
   display: flex;
   align-items: center;
