@@ -56,5 +56,142 @@
       "id": "8PKK8U6tFOM"
     }
   ],
+  "states": [
+      {
+        "name": "Jharkhand",
+        "capital": "Ranchi",
+        "temperature": "30-33°C",
+        "season": "Moderate summer",
+        "gdp": "₹4.5 lakh crore",
+        "population": "3.8 crore",
+        "area": "79,714 km²"
+      },
+      {
+        "name": "Maharashtra",
+        "capital": "Mumbai",
+        "temperature": "28-35°C",
+        "season": "Hot summer",
+        "gdp": "₹35 lakh crore",
+        "population": "12.5 crore",
+        "area": "3,07,713 km²"
+      },
+      {
+        "name": "Tamil Nadu",
+        "capital": "Chennai",
+        "temperature": "28-34°C",
+        "season": "Humid summer",
+        "gdp": "₹25 lakh crore",
+        "population": "7.5 crore",
+        "area": "1,30,058 km²"
+      },
+      {
+        "name": "Uttar Pradesh",
+        "capital": "Lucknow",
+        "temperature": "25-32°C",
+        "season": "Dry summer",
+        "gdp": "₹23 lakh crore",
+        "population": "24 crore",
+        "area": "2,40,928 km²"
+      },
+      {
+        "name": "Karnataka",
+        "capital": "Bengaluru",
+        "temperature": "22-32°C",
+        "season": "Pleasant summer",
+        "gdp": "₹22 lakh crore",
+        "population": "6.8 crore",
+        "area": "1,91,791 km²"
+      },
+      {
+        "name": "Gujarat",
+        "capital": "Gandhinagar",
+        "temperature": "28-36°C",
+        "season": "Dry hot summer",
+        "gdp": "₹20 lakh crore",
+        "population": "7 crore",
+        "area": "1,96,244 km²"
+      },
+      {
+        "name": "West Bengal",
+        "capital": "Kolkata",
+        "temperature": "26-33°C",
+        "season": "Humid summer",
+        "gdp": "₹17 lakh crore",
+        "population": "10 crore",
+        "area": "88,752 km²"
+      },
+      {
+        "name": "Rajasthan",
+        "capital": "Jaipur",
+        "temperature": "25-38°C",
+        "season": "Very hot summer",
+        "gdp": "₹14 lakh crore",
+        "population": "8 crore",
+        "area": "3,42,239 km²"
+      },
+      {
+        "name": "Madhya Pradesh",
+        "capital": "Bhopal",
+        "temperature": "24-35°C",
+        "season": "Hot summer",
+        "gdp": "₹13 lakh crore",
+        "population": "8.5 crore",
+        "area": "3,08,245 km²"
+      },
+      {
+        "name": "Bihar",
+        "capital": "Patna",
+        "temperature": "24-33°C",
+        "season": "Warm summer",
+        "gdp": "₹8 lakh crore",
+        "population": "13 crore",
+        "area": "94,163 km²"
+      },
+      {
+        "name": "Kerala",
+        "capital": "Thiruvananthapuram",
+        "temperature": "27-32°C",
+        "season": "Tropical humid",
+        "gdp": "₹11 lakh crore",
+        "population": "3.5 crore",
+        "area": "38,863 km²"
+      },
+      {
+        "name": "Punjab",
+        "capital": "Chandigarh",
+        "temperature": "20-30°C",
+        "season": "Pleasant",
+        "gdp": "₹7 lakh crore",
+        "population": "3 crore",
+        "area": "50,362 km²"
+      },
+      {
+        "name": "Haryana",
+        "capital": "Chandigarh",
+        "temperature": "22-32°C",
+        "season": "Warm summer",
+        "gdp": "₹10 lakh crore",
+        "population": "3 crore",
+        "area": "44,212 km²"
+      },
+      {
+        "name": "Odisha",
+        "capital": "Bhubaneswar",
+        "temperature": "26-35°C",
+        "season": "Humid summer",
+        "gdp": "₹9 lakh crore",
+        "population": "4.7 crore",
+        "area": "1,55,707 km²"
+      },
+      {
+        "name": "Telangana",
+        "capital": "Hyderabad",
+        "temperature": "27-35°C",
+        "season": "Dry summer",
+        "gdp": "₹13 lakh crore",
+        "population": "4 crore",
+        "area": "1,12,077 km²"
+      }
+    ],
   "$schema": "./node_modules/json-server/schema.json"
 }
